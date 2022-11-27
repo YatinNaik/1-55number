@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script>
+        function showNumber() {
+            // @ts-ignore
+            let Num1 = document.getElementById("number1").value;
+            // @ts-ignore
+            let Num2 = document.getElementById("number2").value;
+            // console.log(Num1 + Num2);
+            let allNum = [];
+
+            for (let i = Num1; i <= Num2; i++) {
+
+                if (i % 4 == 0) {
+                    allNum.push("fourDiv");
+                    // console.log(allNum);
+                }
+                else if (i % 7 == 0) {
+                    allNum.push("sevenDiv");
+                    // console.log(allNum);
+                }
+                else {
+                    allNum.push(i);
+                    // console.log(allNum);
+                }
+            }
+
+            for (let i = 0; i <= allNum.length; i++) {
+            document.getElementById("result").innerHTML = allNum;
+            }
+
+        }
+    </script>
+    <!-- <script src="index.js"></script> -->
+</head>
+
+<body class="conatiner">
+    <div class="main">
+        <div class="heading">
+            <h1>Welcome To The Page</h1>
+            <img src="https://img.freepik.com/free-vector/web-development-programmer-engineering-coding-website-augmented-reality-interface-screens-developer-project-engineer-programming-software-application-design-cartoon-illustration_107791-3863.jpg?w=740&t=st=1669026773~exp=1669027373~hmac=a1498f2d3e4e227fe7c2baf6fc87f8cab0fb907eb60333e76ee4e42142291e45"
+                alt="">
+        </div>
+        <div class="sub-main">
+            <div class="startinput">
+                PLEASE ENTER THE STARTING NUMBER :-<br><br>
+                <input id="number1" class="start" type="text" placeholder="@ex:1">
+            </div>
+            <div class="endinput">
+                PLEASE ENTER THE ENDING NUMBER :-<br><br>
+                <input id="number2" class="stop" type="text" placeholder="@ex:100 ">
+            </div>
+        </div>
+        <div class="body">
+            <div class="submit">
+                <button class="button" type="button" onclick="showNumber()">SUBMIT</button>
+            </div>
+            <p id="result"></p>
+        </div>
+    </div>
+</body>
+
+</html>

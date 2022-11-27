@@ -1,0 +1,43 @@
+.conatiner{
+    background-image: url('');
+}
+.main{
+    text-align: center;
+    background-color: #baf7f7;
+}
+.sub-main{
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+    padding: 5%;
+}
+img{
+    border-radius: 50%;
+    width: 30%;
+}
+.startinput{
+    background-color:mediumspringgreen ;
+    /* border: 1px solid black; */
+    border-radius: 1em;
+    padding: 2%;
+}
+.endinput{
+    border-radius: 1em;
+    background-color:mediumspringgreen ;
+    /* border: 1px solid black; */
+    padding: 2%;
+}
+.start{
+    background-color: #baf7f7;
+    border: 2px solid black;
+}
+.stop{
+    background-color: #baf7f7;
+    border: 2px solid black;
+}
+.button{
+    background-color:burlywood;
+    width: 30%;
+    height: 50%;
+    border-radius: 1rem;
+}
